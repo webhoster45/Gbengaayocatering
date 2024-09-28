@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catering service</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="black">
+        <header>
+            <div class="navbar1">
+                <a href="#" class="logo">Gbengaayo Catering Services</a>
+                <nav class="navbar">
+                    <span class="open-slide">
+                        <a href="#" onclick="openSlideMenu()">
+                            <svg width="30" height="30">
+                                <path d="M0,5 H30" stroke="#fff" stroke-width="5"/>
+                                <path d="M0,14 H30" stroke="#fff" stroke-width="5"/>
+                                <path d="M0,23 H30" stroke="#fff" stroke-width="5"/>
+                            </svg>
+                        </a>
+                    </span>
+                    <ul class="nav-bar-nav">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </nav>
+                <div id="side-menu" class="side-nav">
+                    <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+                    <a href="#">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#services">Services</a>
+                    <a href="#contact">Contact Us</a>
+                </div>
+            </div>
+        </header>
+
+        <main class="main">
+            <section class="hero">
+                <h1>Planning an event but unsure where to start with the menu?</h1>
+                <a href="#" class="trade-btn" id="trade-btn">Reach us</a>
+            </section><br>
+            <img src="\IMG-20240909-WA0017.jpg">
+        </main>
+    </div>
+
+    <section class="about" id="about">
+        <div class="line">
+        <h2>About Us</h2><br>
+        <img class="imageheight" src="\IMG-20240909-WA0018.jpg">
+       <p>Welcome to Gbengaayo Catering Services, where we blend passion, creativity, and expertise to create unforgettable culinary experiences. With a deep-rooted commitment to quality and customer satisfaction, we have been serving our clients with delicious and meticulously prepared dishes that celebrate the rich flavors of local and international cuisines.
+
+            Founded on the principles of excellence and innovation, Gbengaayo Catering Services has grown into a trusted name in the catering industry.
+            
+            
+            </p></div><br>
+        <img class="imageheight" src="\IMG-20240909-WA0016.jpg">
+       
+    </section>
+
+    <section class="services" id="services">
+        <div class="line">
+        <h2>Our Services</h2>
+        <p>1. Event Catering: 
+            From weddings and birthdays to anniversaries and family reunions, Gbengaayo Catering Services offers a wide range of catering options for all types of events. Our customizable menus are designed to suit your tastes and preferences, whether you’re looking for traditional dishes or something more contemporary.
+        </p>
+        <p>
+            2. Corporate Catering:
+            Impress your colleagues and clients with our professional corporate catering services. We provide catering for meetings, conferences, product launches, and office parties, offering a variety of options from breakfast spreads to elegant dinners that will leave a lasting impression.
+        </p>
+        <p>
+            3. Private Chef Services: 
+            Experience the luxury of having a personal chef prepare a gourmet meal in the comfort of your own home. Our private chef services are perfect for intimate dinners, small gatherings, or special celebrations, allowing you to enjoy restaurant-quality cuisine without leaving your home.
+        </p>
+        
+       
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <div class="border">
+        <p>We would love to hear from you.</p>
+        <p>Phone Number: +2347053179009</p>
+       <p>
+        <p>Office address: Jeida kuje Abuja</p>
+        <p>You can also reach us on <a href="https://www.instagram.com/indooroutdoor.gbengaayo?igsh=MXc3cjZnbWNxZWlrNw=="><img src="\images (5)(1).jpeg" alt="instagram"></a></p>
+        </div>
+    </div>
+    </section>
+
+    <footer>
+        <p>Gbengaayo Catering Services &copy; 2024.</p>
+    </footer>
+
+    <script>
+        const button = document.getElementById('trade-btn');
+        button.addEventListener('click', function() {
+            const phoneNumber = '2347053179009';
+            const message = 'Hi Gbengaayo catering services';
+            const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+            window.location.href = url;
+        });
+
+        function openSlideMenu() {
+            document.getElementById('side-menu').style.width = '250px';
+        }
+
+        function closeSlideMenu() {
+            document.getElementById('side-menu').style.width = '0';
+        }
+    </script>
+</body>
+    </div>
+</body>
+</html>
